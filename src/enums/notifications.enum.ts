@@ -1,0 +1,4 @@
+export enum NotificationType {
+  ASSIGNMENT = "ASSIGNMENT",
+  DEADLINE_REMINDER = "DEADLINE_REMINDER",
+}
