@@ -19,6 +19,7 @@ import {
 } from "../services/project.service";
 import { HTTPSTATUS } from "../config/http.config";
 
+// To create a new project 
 export const createProjectController = asyncHandler(
   async (req: Request, res: Response) => {
     const body = createProjectSchema.parse(req.body);
@@ -37,6 +38,7 @@ export const createProjectController = asyncHandler(
   }
 );
 
+// To fetch all existing projects 
 export const getAllProjectsInWorkspaceController = asyncHandler(
   async (req: Request, res: Response) => {
     const workspaceId = workspaceIdSchema.parse(req.params.workspaceId);
@@ -66,6 +68,7 @@ export const getAllProjectsInWorkspaceController = asyncHandler(
   }
 );
 
+// To fetch an existing project using project ID and workspace ID
 export const getProjectByIdAndWorkspaceIdController = asyncHandler(
   async (req: Request, res: Response) => {
     const projectId = projectIdSchema.parse(req.params.id);
@@ -88,6 +91,7 @@ export const getProjectByIdAndWorkspaceIdController = asyncHandler(
   }
 );
 
+// To get analytical details of a project
 export const getProjectAnalyticsController = asyncHandler(
   async (req: Request, res: Response) => {
     const projectId = projectIdSchema.parse(req.params.id);
@@ -110,6 +114,7 @@ export const getProjectAnalyticsController = asyncHandler(
   }
 );
 
+// To update the content inside a project
 export const updateProjectController = asyncHandler(
   async (req: Request, res: Response) => {
     const userId = req.user?._id;
@@ -135,6 +140,7 @@ export const updateProjectController = asyncHandler(
   }
 );
 
+// to delete a project 
 export const deleteProjectController = asyncHandler(
   async (req: Request, res: Response) => {
     const userId = req.user?._id;
