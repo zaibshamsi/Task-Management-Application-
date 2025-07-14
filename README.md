@@ -80,9 +80,3 @@ Access the backend at `http://localhost:5000`.
 4. Working with cron jobs and real-time task updates
 
 5. Debugging production-level errors and deploying features fast
-
-### 📺 Like, Share & Subscribe  
-
-Don’t miss out! **[Subscribe to the Channel](https://tinyurl.com/subcribe-to-techwithEmma)** for more amazing content and exciting projects.  
-
-Now, let’s dive into the demo of **TeamSync**! 🚀
