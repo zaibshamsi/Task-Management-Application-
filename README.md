@@ -45,7 +45,7 @@ This project leverages the latest tools and frameworks for modern development:
 ## 🔄 Getting Started  
 
  ``` bash
-git clone <repo-url>
+git clone https://github.com/zaibshamsi/Task-Management-Application-.git
 cd backend
 npm install
 # create .env based on .env.example
