@@ -53,7 +53,7 @@ npm run dev
 
 ```
 
-### 1. Set Up Environment Variables  
+### Set Up Environment Variables  
 
 ```plaintext  
 PORT=5000
@@ -68,15 +68,6 @@ GOOGLE_CALLBACK_URL=http://localhost:8000/api/auth/google/callback
 
 FRONTEND_ORIGIN=http://localhost:3000
 FRONTEND_GOOGLE_CALLBACK_URL=http://localhost:3000/google/callback
-```  
-
-### 2. Run the Application  
-
-Install dependencies and start the development server:  
-
-```bash  
-npm install  
-npm run dev  
 ```  
 
 Access the backend at `http://localhost:5000`.  
