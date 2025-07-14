@@ -44,6 +44,15 @@ This project leverages the latest tools and frameworks for modern development:
 
 ## 🔄 Getting Started  
 
+ ``` bash
+git clone <repo-url>
+cd backend
+npm install
+# create .env based on .env.example
+npm run dev
+
+```
+
 ### 1. Set Up Environment Variables  
 
 ```plaintext  
