@@ -1,0 +1,857 @@
+{
+	"info": {
+		"_postman_id": "6578db17-8699-446d-b634-03f313d4042b",
+		"name": "Task-manager-APIs",
+		"description": "All the API calls in my Task manager projects has been documented here",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41837948",
+		"_collection_link": "https://www.postman.com/maintenance-candidate-14038000/workspace/my-workspace/collection/41837948-6578db17-8699-446d-b634-03f313d4042b?action=share&source=collection_link&creator=41837948"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GetUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"zaibilahishamsi@gmail.com\",\r\n    \"password\":\"qwerty786$\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/user/current",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user",
+								"current"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "User folder contains the GetUser API to fetch the existing user"
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"zaibilahishamsi@gmail.com\",\r\n    \"name\":\"zaib\",\r\n    \"password\":\"qwerty786$\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"zaibilahishamsi@gmail.com\",\r\n    \"password\":\"qwerty786$\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:5000/api/auth/logout",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Auth folder contains all the API calls of user authentication.\n\n1. Register\n    \n2. Login\n    \n3. Login with google"
+		},
+		{
+			"name": "Workspace",
+			"item": [
+				{
+					"name": "create-workspace",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Zaib's workspace\",\r\n    \"description\":\"workspace created by zaib\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/workspace/create/new",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"workspace",
+								"create",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-workspace",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Zaib's workspace\",\r\n    \"description\":\"workspace created by zaib (updated by zaib)\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/workspace/update/68733d19336affec104e9798",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"workspace",
+								"update",
+								"68733d19336affec104e9798"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-workspace-byId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Zaib's workspace\",\r\n    \"description\":\"workspace created by zaib (updated by zaib)\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/workspace/68733d19336affec104e9798",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"workspace",
+								"68733d19336affec104e9798"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-all-workspaces",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Zaib's workspace\",\r\n    \"description\":\"workspace created by zaib (updated by zaib)\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/workspace/all",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"workspace",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-workspace-members",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Zaib's workspace\",\r\n    \"description\":\"workspace created by zaib (updated by zaib)\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/workspace/members/68733d19336affec104e9798",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"workspace",
+								"members",
+								"68733d19336affec104e9798"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-workspace-analytics",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Zaib's workspace\",\r\n    \"description\":\"workspace created by zaib (updated by zaib)\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/workspace/analytics/68733d19336affec104e9798",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"workspace",
+								"analytics",
+								"68733d19336affec104e9798"
+							]
+						},
+						"description": "Such as how many tasks and projects are in this respective workspace\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Change-member-role",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"roleId\": \"68733be189c5aed9c75aa059\",\r\n   \"memberId\": \"68733d19336affec104e9794\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/workspace/change/member/role/68733d19336affec104e9798",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"workspace",
+								"change",
+								"member",
+								"role",
+								"68733d19336affec104e9798"
+							]
+						},
+						"description": "Switch between the roles of members in a workspace, Roles such as MEMBER, OWNER, ADMIN"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete-workspace",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Zaib's workspace\",\r\n    \"description\":\"workspace created by zaib\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/workspace/delete/68738c9b5875f81523460b50",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"workspace",
+								"delete",
+								"68738c9b5875f81523460b50"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Workspace folder contains all the API calls for the workspace endpoint\n\n1. Create workspace\n    \n2. Update workspace\n    \n3. Get workspace by ID\n    \n4. Get all workspaces\n    \n5. Get members inside the workspace\n    \n6. Get analytical detials of a workspace\n    \n7. Change the role of a member inside a workspace\n    \n8. Delete a workspace"
+		},
+		{
+			"name": "Members",
+			"item": [
+				{
+					"name": "Join-workspace",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"zaibilahishamsi@gmail.com\",\r\n    \"password\":\"qwerty786$\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/member/workspace/00b0a0a8/join",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"member",
+								"workspace",
+								"00b0a0a8",
+								"join"
+							]
+						},
+						"description": "Joining workspace through the invite code of another workspace\r\n"
+					},
+					"response": []
+				}
+			],
+			"description": "Members folder contains the API call for a member to join the workspace through an invite code set while creating a workspace"
+		},
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "Create-Project",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"The first Project\",\r\n   \"description\":\"the very first project created here\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/project/workspace/687389245875f81523460b1c/create",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"project",
+								"workspace",
+								"687389245875f81523460b1c",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-Project",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"The first Project\",\r\n   \"description\":\"the very first project created here\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/project/workspace/687389245875f81523460b1c/all",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"project",
+								"workspace",
+								"687389245875f81523460b1c",
+								"all"
+							]
+						},
+						"description": "fetch all the projects inside the workspace "
+					},
+					"response": []
+				},
+				{
+					"name": "Get-project-analytics",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"The first Project\",\r\n   \"description\":\"the very first project created here\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/project/687390775875f81523460b7d/workspace/687389245875f81523460b1c/analytics",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"project",
+								"687390775875f81523460b7d",
+								"workspace",
+								"687389245875f81523460b1c",
+								"analytics"
+							]
+						},
+						"description": "Fetch all the tasks, overdueTasks and completed tasks inside a workspace\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Get-projectBy-ID-and-WorkspaceId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"The first Project\",\r\n   \"description\":\"the very first project created here\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/project/687390775875f81523460b7d/workspace/687389245875f81523460b1c",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"project",
+								"687390775875f81523460b7d",
+								"workspace",
+								"687389245875f81523460b1c"
+							]
+						},
+						"description": "To fetch a specific project using Project ID and workspace ID"
+					},
+					"response": []
+				},
+				{
+					"name": "Update-Project",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"The first Project (and updated too)\",\r\n   \"description\":\"the very first project created here\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/project/687390775875f81523460b7d/workspace/687389245875f81523460b1c/update",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"project",
+								"687390775875f81523460b7d",
+								"workspace",
+								"687389245875f81523460b1c",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete-project",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"The first Project (and updated too)\",\r\n   \"description\":\"the very first project created here\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/project/6873928f5875f81523460b96/workspace/687389245875f81523460b1c/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"project",
+								"6873928f5875f81523460b96",
+								"workspace",
+								"687389245875f81523460b1c",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Project folder contains all the API calls to :-\n\n1. Create a project\n    \n2. Fetch a project ( get project )\n    \n3. Get analytical details of a project\n    \n4. Update content inside a project\n    \n5. Delete a project"
+		},
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "Create-Task",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"title\": \"My First Task\",\r\n   \"priority\": \"MEDIUM\",\r\n   \"status\": \"TODO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/task/project/687390775875f81523460b7d/workspace/687389245875f81523460b1c/create",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"task",
+								"project",
+								"687390775875f81523460b7d",
+								"workspace",
+								"687389245875f81523460b1c",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update-Task",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"title\": \"My First Task (updated while testing API)\",\r\n   \"priority\": \"MEDIUM\",\r\n   \"status\": \"TODO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/task/6873ac3a5875f81523460ba4/project/687390775875f81523460b7d/workspace/687389245875f81523460b1c/update",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"task",
+								"6873ac3a5875f81523460ba4",
+								"project",
+								"687390775875f81523460b7d",
+								"workspace",
+								"687389245875f81523460b1c",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-All-Task-InAWorkspace",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/task/workspace/687389245875f81523460b1c/all",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"task",
+								"workspace",
+								"687389245875f81523460b1c",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch-Task",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/task/6873ac3a5875f81523460ba4/project/687390775875f81523460b7d/workspace/687389245875f81523460b1c",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"task",
+								"6873ac3a5875f81523460ba4",
+								"project",
+								"687390775875f81523460b7d",
+								"workspace",
+								"687389245875f81523460b1c"
+							]
+						},
+						"description": "Fetch a specific tasks through task ID , project ID , and workspace ID"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete-Task",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:5000/api/task/6873b0ca5875f81523460bbb/workspace/687389245875f81523460b1c/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"task",
+								"6873b0ca5875f81523460bbb",
+								"workspace",
+								"687389245875f81523460b1c",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Task folder contains all the API calls to :-\n\n1. Create a task\n    \n2. Update content inside a task\n    \n3. Get/fetch all the task inside a workspace\n    \n4. Fetch/Get task\n    \n5. Delete task"
+		},
+		{
+			"name": "Notification",
+			"item": [
+				{
+					"name": "Notificaitons",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"zaibilahishamsi@gmail.com\",\r\n    \"password\":\"qwerty786$\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:5000/api/notification/my",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"notification",
+								"my"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This notification folder contains the API call for fetching the notification that has been assigned while making tasks, this notification endpoint can be attached to the bell icon in the frontend to make the deadline or task assigning notification feature."
+		}
+	]
+}
