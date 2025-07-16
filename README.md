@@ -39,7 +39,6 @@ This project leverages the latest tools and frameworks for modern development:
 - **MongoDB & Mongoose**: Flexible and scalable database solutions  
 - **Google OAuth**: Seamless Google Sign-In integration  
 - **TypeScript**: For a type-safe codebase
-- 
 ---
 
 ## 🔄 Getting Started  
