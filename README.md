@@ -18,7 +18,8 @@ Welcome to **TaskManager**, a powerful and scalable multi-tenancy project manage
 - 🔐 **Authentication** (Google Sign-In, Email, Password)  
 - 🏢 **Create & Manage Multiple Workspaces**  
 - 📊 **Projects & Epics Management**  
-- ✅ **Tasks** (CRUD, Status, Priority, Assignee)  
+- ✅ **Tasks** (CRUD, Status, Priority, Assignee)
+- 🔔 **Notifications** (Notification related to Tasks and deadlines) 
 - 👥 **Roles & Permissions** (Owner, Admin, Member)  
 - ✉️ **Invite Members to Workspaces**  
 - 🔍 **Filters & Search** (Status, Priority, AssignedTo)  
